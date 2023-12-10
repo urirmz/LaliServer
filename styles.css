@@ -1,0 +1,164 @@
+:root {
+    /* Color palette */
+    --background-white: #FDFDFC;
+    --darker-green: #2C3628;
+    --dark-green: #4B5745;
+    --green: #7A8474;
+    --dark-gray: #A2A39A;
+    --gray: #CCC7C3;
+    /* Seizures */
+    --navBarHeight: 1rem;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-white);
+    color: var(--dark-green);
+    font-family: 'Poppins', sans-serif;
+}
+
+body a {
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.hojas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+#hoja-izquierda {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hoja-derecha {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#inicio {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 15%;
+}
+
+#inicio h1 {
+    font-family: 'amsterdam', sans-serif;
+    margin: 2.5rem auto;
+    text-transform: capitalize;
+    font-weight: 200;
+}
+
+#inicio h3 {
+    margin: 0.5rem auto;
+}
+
+#inicio h3:last-of-type {
+    margin: 2rem auto;
+}
+
+.fecha {
+    display: grid;
+    grid-template-columns: 1fr 4.5em 1fr;
+    width: 20rem;
+    margin: 2rem auto;
+    color: var(--green);
+} 
+
+.fecha div {
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+
+.fecha div:nth-child(4), .fecha div:nth-child(6) {
+    border-bottom: .2rem solid var(--dark-green);
+    border-top: .2rem solid var(--dark-green);
+}   
+
+.buttonLink {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0.2rem;
+    color: var(--background-white);
+    height: 1.5rem;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
+    transition: all 1s;
+}
+
+.buttonLink:hover {
+    display: inline-block;
+    color: var(--dark-green);
+    height: 1.5rem;
+    background-color: var(--background-white);
+    border: 1px solid var(--darker-green);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+#navBar {
+    display: flex;
+    padding: 1rem 10%;
+    height: var(--navBarHeight);
+    justify-content: space-evenly;
+    transition: all 1s;
+    background-color: var(--background-white);
+    font-family: 'Forum', serif;
+    font-size: 1.2rem;
+}
+
+.navLink:hover::after, .navLink:active::after {
+    display: block;
+    content: '';
+    position: relative;
+    left: -15%;
+    width: 130%;
+    height: 0.2rem;
+    background-color: var(--darker-green);
+}
+
+section {
+    padding-top: calc(var(--navBarHeight) * 3);
+    padding: calc(var(--navBarHeight) * 3) 10%;
+    height: 100vh;
+}
+
+.quote {
+    text-align: right;
+    font-style: italic;
+}
+
+#invite {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#invite p, #invite.brides {
+    margin: 0.2rem 0;
+}
+
+#invite hr {
+    width: 7%;
+}
+
+.brides {
+    font-family: 'amsterdam', sans-serif;
+    margin: 2.5rem auto;
+    text-transform: capitalize;
+}
+
+#invite h3:last-of-type {
+    margin: -1rem 0 0 0;
+}
