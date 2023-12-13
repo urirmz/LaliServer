@@ -18,76 +18,98 @@ body {
 }
 
 body a {
-    color: var(--dark-green);
     text-decoration: none;
+    color: var(--background-white);
 }
 
-.hojas {
-    position: absolute;
+nav {
+    position: sticky;
+    font-size: 1rem;
+}
+
+.navBar {
+    display: flex;
+    padding: 1em 10%;
+    height: var(--navBarHeight);
+    justify-content: space-evenly;
+    transition: all 1s;
+    font-family: 'Forum', serif;
+    text-transform: unset;
+    z-index: 999;
+}
+
+.navDarkFont {
+    position: sticky;
+    top: 0;
+}
+
+.navDarkFont a {
+    color: #2C3628;
+}
+
+.navLink:hover::after, .navLink:active::after {
+    display: block;
+    content: '';
+    position: relative;
+    left: -15%;
+    width: 130%;
+    height: 0.2em;
+    background-color: var(--gray);
+}
+
+.main-image {
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
-#hoja-izquierda {
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#hoja-derecha {
-    position: absolute;
-    top: 0;
-    right: 0;
+    height: 100vh;
+    background-image: linear-gradient(
+        45deg,
+        #4B5745B4,
+        #2C3628B4
+    ), url(img/gallery/1.jpg);
+    background-size: cover;
 }
 
 #inicio {
-    text-transform: uppercase;
     text-align: center;
-    padding-top: 15%;
+    font-size: 0.8rem;
+    color: var(--background-white);
 }
 
 #inicio h1 {
     font-family: 'amsterdam', sans-serif;
-    margin: 2.5rem auto;
+    margin: 15% auto 0 auto;
     text-transform: capitalize;
-    font-weight: 200;
+    font-size: 2.5em;
+    font-weight: 200;   
 }
 
 #inicio h3 {
-    margin: 0.5rem auto;
-}
-
-#inicio h3:last-of-type {
-    margin: 2rem auto;
+    text-transform: uppercase;
+    margin: 1em auto;
 }
 
 .fecha {
+    text-transform: uppercase;
     display: grid;
     grid-template-columns: 1fr 4.5em 1fr;
-    width: 20rem;
-    margin: 2rem auto;
-    color: var(--green);
+    width: 20em;
+    margin: 1em auto;
 } 
 
 .fecha div {
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
 }
 
 .fecha div:nth-child(4), .fecha div:nth-child(6) {
-    border-bottom: .2rem solid var(--dark-green);
-    border-top: .2rem solid var(--dark-green);
+    border-bottom: .2em solid var(--background-white);
+    border-top: .2em solid var(--background-white);
 }   
 
 .buttonLink {
     display: inline-block;
-    padding: 1rem;
-    margin: 0.2rem;
+    padding: 1em;
+    margin: 0.2em;
     color: var(--background-white);
-    height: 1.5rem;
     background-color: var(--green);
     border: 1px solid var(--green);
     border-radius: 7% 7% 7% 7% / 50% 50% 50% 50%;
@@ -97,35 +119,8 @@ body a {
 .buttonLink:hover {
     display: inline-block;
     color: var(--dark-green);
-    height: 1.5rem;
     background-color: var(--background-white);
     border: 1px solid var(--darker-green);
-}
-
-nav {
-    position: sticky;
-    top: 0;
-}
-
-#navBar {
-    display: flex;
-    padding: 1rem 10%;
-    height: var(--navBarHeight);
-    justify-content: space-evenly;
-    transition: all 1s;
-    background-color: var(--background-white);
-    font-family: 'Forum', serif;
-    font-size: 1.2rem;
-}
-
-.navLink:hover::after, .navLink:active::after {
-    display: block;
-    content: '';
-    position: relative;
-    left: -15%;
-    width: 130%;
-    height: 0.2rem;
-    background-color: var(--darker-green);
 }
 
 section {
@@ -146,7 +141,7 @@ section {
 }
 
 #invite p, #invite.brides {
-    margin: 0.2rem 0;
+    margin: 0.2em 0;
 }
 
 #invite hr {
@@ -155,10 +150,55 @@ section {
 
 .brides {
     font-family: 'amsterdam', sans-serif;
-    margin: 2.5rem auto;
+    margin: 2.5em auto;
     text-transform: capitalize;
 }
 
 #invite h3:last-of-type {
-    margin: -1rem 0 0 0;
+    margin: -1em 0 0 0;
 }
+
+#nuestraHistoria {
+    height: unset;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery-column:nth-child(1) {
+    flex-basis: 40%;
+}
+
+.gallery-column:nth-child(2) {
+    flex-basis: 35%;
+}
+
+.gallery-column:nth-child(3) {
+    flex-basis: 25%;
+}
+
+.gallery-pic {
+    display: inline-flex;
+    margin: 0;
+    padding: 2.5%;
+}
+
+.gallery-pic img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+

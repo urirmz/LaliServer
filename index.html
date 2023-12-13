@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,11 +15,18 @@
 </head>
 <body>  
     <header id="inicio">
-        <div class="hojas">
-            <img src="img/hoja-izquierda.png" id="hoja-izquierda" alt="">
-            <img src="img/hoja-derecha.png" id="hoja-derecha" alt="">
-        </div>
-        <h1>Citlali y Rodrigo</h1>
+        <div class="main-image">
+            <nav>
+                <div class="navBar">
+                    <a href="#inicio" class="navLink">Inicio</a>
+                    <a href="#invitacion" class="navLink">Invitación</a>
+                    <a href="#nuestraHistoria" class="navLink">Nuestra Historia</a>
+                    <a href="#guiaDelEvento" class="navLink">Guía del evento</a>
+                    <a href="#menu" class="navLink">Menu</a>
+                    <a href="#regalos" class="navLink">Mesa de regalos</a>
+                </div>    
+            </nav>
+            <h1>Citlali y Rodrigo</h1>
         <h3>
             <div class="fecha">
                 <div></div>
@@ -34,27 +42,20 @@
             <a href="https://maps.app.goo.gl/ooEGKSdMZrsuBchz5" class="buttonLink" target="_blank">Parroquia San Pablo</a>
         </h3>
         <h3>¡Faltan días!</h3>
+        </div>
     </header>
     <main>
-        <nav>
-            <div id="navBar">
+        <nav class="navDarkFont">
+            <div class="navBar">
                 <a href="#inicio" class="navLink">Inicio</a>
                 <a href="#invitacion" class="navLink">Invitación</a>
                 <a href="#nuestraHistoria" class="navLink">Nuestra Historia</a>
-                <a href="#ceremonia" class="navLink">Ceremonia</a>
-                <a href="#fiesta" class="navLink">Fiesta</a>
+                <a href="#guiaDelEvento" class="navLink">Guía del evento</a>
                 <a href="#menu" class="navLink">Menu</a>
                 <a href="#regalos" class="navLink">Mesa de regalos</a>
-            </div>
+            </div>    
         </nav>
-        <div class="sectionSpacer">
-            <img src="" alt="">
-        </div>
         <section id="invitacion">
-            <div class="hojas">
-                <img src="img/hoja-izquierda.png" id="hoja-izquierda" alt="">
-                <img src="img/hoja-derecha.png" id="hoja-derecha" alt="">
-            </div>
             <p class="quote">"Las mejores cosas de la vida merecen ser compartidas,</p>
             <p class="quote">gracias por celebrar con nosotros"</p>
             <div id="invite">
@@ -76,10 +77,65 @@
             </div>
         </section>
         <section id="nuestraHistoria">
+            <div id="gallery">
+                <div class="gallery-column">                    
+                    <figure class="gallery-pic" id="fig1">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g1.jpg" alt="">
+                    </figure> 
+                    <figure class="gallery-pic" id="fig2">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g2.jpg" alt="">
+                    </figure>
+                    <figure class="gallery-pic" id="fig3">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g3.jpg" alt="">
+                    </figure> 
+                    <figure class="gallery-pic" id="fig4">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g4.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="gallery-column">
+                    <figure class="gallery-pic" id="fig5">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g5.jpg" alt="">
+                    </figure>  
+                    <figure class="gallery-pic" id="fig6">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g6.jpg" alt="">
+                    </figure>
+                    <figure class="gallery-pic" id="fig7">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g7.jpg" alt="">
+                    </figure> 
+                                      
+                </div>
+                <div class="gallery-column">                    
+                    <figure class="gallery-pic" id="fig8">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g8.jpg" alt="">
+                    </figure>
+                    <figure class="gallery-pic" id="fig9">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g9.jpg" alt="">
+                    </figure> 
+                    <figure class="gallery-pic" id="fig10">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g10.jpg" alt="">
+                    </figure>
+                    <figure class="gallery-pic" id="fig11">
+                        <figcaption></figcaption>
+                        <img src="img/gallery/g11.jpg" alt="">
+                    </figure>
+                </div>                         
+            </div>
         </section>
-        <section id="timeLine">
+        <section id="guiaDelEvento">
         </section>
-        <section id="ceremonia">
+        <section id="menu">
+        </section>
+        <section id="regalos">
         </section>
     </main>
 </body>
