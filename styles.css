@@ -266,10 +266,18 @@ section {
 }
 
 .eventIcon {
-    margin: auto 2em;
+    display: flex;
 }
 
 .eventIcon img {
     max-height: 6em;
-    
+    padding: 0 2em;
+}
+
+.iconLeft {
+    justify-content: right;
+}
+
+.iconRight {
+    justify-content: left;
 }
