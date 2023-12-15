@@ -29,7 +29,7 @@ nav {
 
 .navBar {
     display: flex;
-    padding: 1em 10%;
+    padding: var(--navBarHeight) 10%;
     height: var(--navBarHeight);
     justify-content: space-evenly;
     transition: all 1s;
@@ -41,6 +41,7 @@ nav {
 .navDarkFont {
     position: sticky;
     top: 0;
+    background-color: var(--background-white);
 }
 
 .navDarkFont a {
@@ -126,7 +127,7 @@ nav {
 section {
     padding-top: calc(var(--navBarHeight) * 3);
     padding: calc(var(--navBarHeight) * 3) 10%;
-    height: 100vh;
+    height: calc(100vh + var(--navBarHeight));
 }
 
 .quote {
