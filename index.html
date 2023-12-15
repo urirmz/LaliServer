@@ -41,39 +41,9 @@
             <a href="https://maps.app.goo.gl/wtY4m8RsyVJnbnkT6" class="buttonLink" target="_blank">Salón de eventos Olimpo</a>
             <a href="https://maps.app.goo.gl/ooEGKSdMZrsuBchz5" class="buttonLink" target="_blank">Parroquia San Pablo</a>
         </h3>
-        <h3>¡Falta
-            <script>
-                var end = new Date('10/04/2024 10:1 AM');
-                
-                    var _second = 1000;
-                    var _minute = _second * 60;
-                    var _hour = _minute * 60;
-                    var _day = _hour * 24;
-                    var timer;
-                
-                    function showRemaining() {
-                        var now = new Date();
-                        var distance = end - now;
-                        if (distance < 0) {
-                
-                            clearInterval(timer);
-                            document.getElementById('countdown').innerHTML = 'EXPIRED!';
-                
-                            return;
-                        }
-                        var days = Math.floor(distance / _day);
-                        var hours = Math.floor((distance % _day) / _hour);
-                        var minutes = Math.floor((distance % _hour) / _minute);
-                        var seconds = Math.floor((distance % _minute) / _second);
-                
-                        document.getElementById('countdown').innerHTML = days + 'days ';
-                        document.getElementById('countdown').innerHTML += hours + 'hrs ';
-                        document.getElementById('countdown').innerHTML += minutes + 'mins ';
-                        document.getElementById('countdown').innerHTML += seconds + 'secs';
-                    }
-                
-                    timer = setInterval(showRemaining, 1000);
-            </script>
+        <h3>
+            ¡Faltan
+            <script type="module" src="./scripts/countdown.js"></script>
             <div id="countdown"></div>
             !
         </h3>
@@ -167,6 +137,54 @@
             </div>
         </section>
         <section id="guiaDelEvento">
+            <div id="timeline">
+                <div class="eventDescription leftText">
+                    <div class="eventText">
+                        <h2>7:00 PM</h2>
+                        <p>Ceremonia</p>
+                    </div>
+                    <div class="middleLine"></div>
+                    <div></div>
+                </div>        
+                <div class="middleLine"></div>
+                <div class="eventIcon"></div>
+                <div class="eventIcon"></div>
+                <div class="middleLine"></div>
+                <div class="eventDescription rightText">
+                    <h2>8:30 PM</h2>
+                    <p>Fotografías</p>                    
+                </div>
+                <div class="eventDescription leftText">
+                    <h2>9:00 PM</h2>
+                    <p>Cocktail</p>
+                </div>
+                <div class="middleLine"></div>
+                <div class="eventIcon"></div>
+                <div class="eventIcon"></div>
+                <div class="middleLine"></div>
+                <div class="eventDescription rightText">
+                    <h2>9:30 PM</h2>
+                    <p>Entrada de novios</p>
+                </div>
+                <div class="eventDescription leftText">
+                    <h2>9:45 PM</h2>
+                    <p>Primer baile</p>
+                </div>
+                <div class="middleLine"></div>
+                <div class="eventIcon"></div>
+                <div class="eventIcon"></div>
+                <div class="middleLine"></div>
+                <div class="eventDescription rightText">
+                    <h2>10:00 PM</h2>
+                    <p>Cena</p>
+                </div>
+                <div class="eventDescription leftText">
+                    <h2>11:00 PM</h2>
+                    <p>Party</p>
+                </div>
+                <div class="middleLine"></div>
+                <div class="eventIcon"></div>
+            </div>
         </section>
         <section id="menu">
         </section>

@@ -61,11 +61,6 @@ nav {
 .main-image {
     width: 100%;
     height: 100vh;
-    /* background-image: linear-gradient(
-        45deg,
-        #4B5745B4,
-        #2C3628B4
-    ), url(img/gallery/1.jpg); */
     background-image: linear-gradient(
         180deg,
         #2C3628,
@@ -111,6 +106,10 @@ nav {
     border-bottom: .2em solid var(--background-white);
     border-top: .2em solid var(--background-white);
 }   
+
+#countdown {
+    display: inline;
+}
 
 .buttonLink {
     display: inline-block;
@@ -208,4 +207,35 @@ section {
     border-radius: 1em;
 }
 
+#timeline {
+    display: grid;
+    grid-template-columns: 1fr 0.3em 1fr;
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+}
 
+.eventDescription h2, .eventDescription p {
+    margin: 0;
+}
+
+.middleLine {
+    background-color: var(--dark-green);
+}
+
+.rightText {
+    text-align: right;
+}
+
+.leftText {
+    text-align: left;
+}
+
+.eventDescription {
+    display: grid;
+    grid-template-rows: 1fr 0.3em 1fr;
+}
+
+.eventText h2, .eventText p {
+    display: inline;
+}
