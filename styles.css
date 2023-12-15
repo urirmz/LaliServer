@@ -219,24 +219,30 @@ section {
 
 .middleLine {
     background-color: var(--dark-green);
-}
-
-.lineCircle {
     --circle-diameter: 1.5em;
     --circle-radius: calc(var(--circle-diameter) / 2);
+}
+
+.circleLeft::before {
+    content: '';
+    display: block;
     height: var(--circle-diameter);
     width: var(--circle-diameter);
     background-color: var(--dark-green);
     border-radius: 50%;
     margin-top: calc(var(--circle-radius) * -1 + calc(var(--midLinesWeight) / 2));
-}
-
-.circleRight {
-    margin-left: calc(100% - var(--circle-radius));
-}
-
-.circleLeft {
     margin-left: calc(var(--circle-radius) * -1);
+}
+
+.circleRight::after {
+    content: '';
+    display: block;
+    height: var(--circle-diameter);
+    width: var(--circle-diameter);
+    background-color: var(--dark-green);
+    border-radius: 50%;
+    margin-top: calc(var(--circle-radius) * -1 + calc(var(--midLinesWeight) / 2));
+    margin-left: calc(100% - var(--circle-radius));
 }
 
 .event {
