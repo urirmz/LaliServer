@@ -36,6 +36,7 @@ nav {
     font-family: 'Forum', serif;
     text-transform: unset;
     z-index: 999;
+    font-weight: bold;
 }
 
 .navDarkFont {
@@ -45,7 +46,7 @@ nav {
 }
 
 .navDarkFont a {
-    color: #2C3628;
+    color: var(--dark-green);
 }
 
 .navLink:hover::after, .navLink:active::after {
