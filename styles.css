@@ -1,6 +1,5 @@
 :root {
     /* Color palette */
-    /* --background-white: #FDFDFC; */
     --background-white: #F8F4EF;
     --darker-green: #2C3628;
     --dark-green: #4B5745;
@@ -80,7 +79,7 @@ nav {
 
 #inicio h1 {
     font-family: 'amsterdam', sans-serif;
-    margin: 15% auto 0 auto;
+    margin: 10% auto 0 auto;
     text-transform: capitalize;
     font-size: 2.5em;
     font-weight: 200;   
@@ -129,6 +128,84 @@ nav {
     color: var(--dark-green);
     background-color: var(--background-white);
     border: 1px solid var(--darker-green);
+}
+
+/* Music player */
+.music-player {
+  margin-top: 4em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.player-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+ 
+.playpause-track, .prev-track, .next-track {
+  padding: 0.8em;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+
+.playpause-track:hover, .prev-track:hover, .next-track:hover {
+  opacity: 1.0;
+}
+ 
+.slider_container {
+  width: 30em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+ 
+.seek_slider::-webkit-slider-thumb, .volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+ 
+.seek_slider:hover, .volume_slider:hover {
+  opacity: 1.0;
+}
+ 
+.seek_slider {
+  width: 60%;
+}
+ 
+.volume_slider {
+  width: 30%;
+}
+ 
+.current-time, .total-duration {
+  padding: 0.8em;
+}
+ 
+i.fa-volume-down, i.fa-volume-up {
+  padding: 0.8em;
+}
+ 
+i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
+  cursor: pointer;
 }
 
 section {
@@ -283,3 +360,4 @@ section {
 .iconRight {
     justify-content: left;
 }
+
