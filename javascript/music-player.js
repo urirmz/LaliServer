@@ -19,13 +19,13 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played
 let track_list = [
     {
-      path: "music/EdSheeran-Photograph.mp3"
+      path: "./music/PedroInfante-TeQuieroAsi.mp3"
     },
     {
-      path: "Enthusiast.mp3"
+      path: "./music/EdSheeran-Photograph.mp3"
     },
     {
-      path: "Shipping_Lanes.mp3",
+      path: "./music/Earth,Wind&Fire-MyPromise.mp3",
     },
   ];
 
