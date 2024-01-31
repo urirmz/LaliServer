@@ -67,10 +67,9 @@ nav {
     z-index: 999;
     top: 1rem;
     left: 1rem;
-    padding: 1em;
     border: var(--dark-green) solid 0.1em;
-    width: 4em;
-    height: 4em;
+    width: 4rem;
+    height: 4rem;
     background: var(--background-white);
     opacity: 0.5;
     cursor: pointer;
@@ -105,7 +104,7 @@ nav {
 }
 
 .title {
-    padding-top: 16em;
+    padding-top: 10em;
 }
 
 #inicio h1 {
