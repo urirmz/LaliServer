@@ -12,6 +12,7 @@
     <link href="https://fonts.cdnfonts.com/css/amsterdam-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/angella-white-personal-use-font" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" media="only screen and (max-width: 431px)" href="styles-mobile.css">
     <link rel="stylesheet" media="only screen and (min-width: 432px)" href="styles.css">
 </head>
@@ -19,16 +20,30 @@
     <header id="inicio">
         <div class="main-image">
             <nav>
-                <div class="navBar">
-                    <a href="#inicio" class="navLink">Inicio</a>
-                    <a href="#invitacion" class="navLink">Invitación</a>
-                    <a href="#nuestraHistoria" class="navLink">Nuestra Historia</a>
-                    <a href="#guiaDelEvento" class="navLink">Guía del evento</a>
-                    <a href="#menu" class="navLink">Menu</a>
-                    <a href="#regalos" class="navLink">Mesa de regalos</a>
+                <div class="nav-bar">
+                    <a href="#inicio" class="nav-bar-link">Inicio</a>
+                    <a href="#invitacion" class="nav-bar-link">Invitación</a>
+                    <a href="#nuestra-historia" class="nav-bar-link">Nuestra Historia</a>
+                    <a href="#guia-del-evento" class="nav-bar-link">Guía del evento</a>
+                    <a href="#menu" class="nav-bar-link">Menu</a>
+                    <a href="#regalos" class="nav-bar-link">Mesa de regalos</a>
+                </div>
+                <div class="nav-menu">
+                    <a href="#inicio" class="nav-menu-link">Inicio</a>
+                    <a href="#invitacion" class="nav-menu-link">Invitación</a>
+                    <a href="#nuestra-historia" class="nav-menu-link">Nuestra Historia</a>
+                    <a href="#guia-del-evento" class="nav-menu-link">Guía del evento</a>
+                    <a href="#menu" class="nav-menu-link">Menu</a>
+                    <a href="#regalos" class="nav-menu-link">Mesa de regalos</a>
                 </div>    
+                <button class="nav-menu-button">
+                    <i class="open-menu material-icons">menu</i>
+                    <i class="close-menu material-icons">close</i>
+                </button>
             </nav>
-            <h1>Citlali y Rodrigo</h1>
+            <div class="title">
+                <h1>Citlali y Rodrigo</h1>
+            </div>
             <h3>
                 <div class="fecha">
                     <div></div>
@@ -40,8 +55,8 @@
                 </div>
             </h3>
             <h3>
-                <a href="https://maps.app.goo.gl/wtY4m8RsyVJnbnkT6" class="buttonLink" target="_blank">Salón de eventos Olimpo</a>
-                <a href="https://maps.app.goo.gl/ooEGKSdMZrsuBchz5" class="buttonLink" target="_blank">Parroquia San Pablo</a>
+                <a href="https://maps.app.goo.gl/wtY4m8RsyVJnbnkT6" class="button-link" target="_blank">Salón de eventos Olimpo</a>
+                <a href="https://maps.app.goo.gl/ooEGKSdMZrsuBchz5" class="button-link" target="_blank">Parroquia San Pablo</a>
             </h3>
             <h3>
                 <div id="countdown"></div>
@@ -71,14 +86,14 @@
         </div>
     </header>
     <main>
-        <nav class="navDarkFont">
-            <div class="navBar">
-                <a href="#inicio" class="navLink">Inicio</a>
-                <a href="#invitacion" class="navLink">Invitación</a>
-                <a href="#nuestraHistoria" class="navLink">Nuestra Historia</a>
-                <a href="#guiaDelEvento" class="navLink">Guía del evento</a>
-                <a href="#menu" class="navLink">Menu</a>
-                <a href="#regalos" class="navLink">Mesa de regalos</a>
+        <nav class="nav-dark-font">
+            <div class="nav-bar">
+                <a href="#inicio" class="nav-bar-link">Inicio</a>
+                <a href="#invitacion" class="nav-bar-link">Invitación</a>
+                <a href="#nuestra-historia" class="nav-bar-link">Nuestra Historia</a>
+                <a href="#guia-del-evento" class="nav-bar-link">Guía del evento</a>
+                <a href="#menu" class="nav-bar-link">Menu</a>
+                <a href="#regalos" class="nav-bar-link">Mesa de regalos</a>
             </div>    
         </nav>
         <section id="invitacion">
@@ -87,14 +102,14 @@
             <div id="invite">
                 <div>
                     <h3>En compañía de nuestros padres</h3>
-                    <p class="importantPeople">Ricardo Uribe Ruiz</p>
-                    <p class="importantPeople">Patricia Vega Vidal</p>
+                    <p class="gente-importante">Ricardo Uribe Ruiz</p>
+                    <p class="gente-importante">Patricia Vega Vidal</p>
                     <hr>
-                    <p class="importantPeople">Oscar Ramírez Ramírez</p>
-                    <p class="importantPeople">Leticia Barajas Quiñones</p>
+                    <p class="gente-importante">Oscar Ramírez Ramírez</p>
+                    <p class="gente-importante">Leticia Barajas Quiñones</p>
                     <h3>Y nuestros padrinos</h3>
-                    <p class="importantPeople">Mauro Salvador Macías Esparza</p>
-                    <p class="importantPeople">Mercedes Cornejo Jauregui</p>
+                    <p class="gente-importante">Mauro Salvador Macías Esparza</p>
+                    <p class="gente-importante">Mercedes Cornejo Jauregui</p>
                     <h3>Nosotros,</h3>
                     <p class="brides">Citlali y Rodrigo</p>
                     <h3>Deseamos compartir con ustedes</h3>
@@ -102,7 +117,7 @@
                 </div>
             </div>
         </section>
-        <section id="nuestraHistoria">
+        <section id="nuestra-historia">
             <div id="gallery">
                 <div class="gallery-column">                    
                     <figure class="gallery-pic" id="fig1">
@@ -157,90 +172,90 @@
                 </div>                         
             </div>
         </section>
-        <section id="guiaDelEvento">
+        <section id="guia-del-evento">
             <div id="timeline">
                 <div class="event">
-                    <div class="eventDescription">
+                    <div class="event-description">
                         <h2>7:00 PM</h2>
                         <p>Ceremonia</p>
                     </div>
-                    <div></div><div class="middleLine circleLeft">
+                    <div></div><div class="middle-line circle-left">
                     </div><div></div>
                 </div>        
-                <div class="middleLine"></div>
-                <div class="eventIcon iconRight">
+                <div class="middle-line"></div>
+                <div class="event-icon icon-right">
                     <img src="./img/icons/church.png" alt="">
                 </div>
-                <div class="eventIcon iconLeft">
+                <div class="event-icon icon-left">
                     <img src="./img/icons/photo.png" alt="">
                 </div>
-                <div class="middleLine"></div>
+                <div class="middle-line"></div>
                 <div class="event">
-                    <div></div><div class="middleLine circleRight">
+                    <div></div><div class="middle-line circle-right">
                     </div><div></div>  
-                    <div class="eventDescription rightText">
+                    <div class="event-description right-text">
                         <h2>8:30 PM</h2>
                         <p>Fotografías</p> 
                     </div>                                     
                 </div>
                 <div class="event">
-                    <div class="eventDescription">
+                    <div class="event-description">
                         <h2>9:00 PM</h2>
                         <p>Cocktail</p>
                     </div>
-                    <div></div><div class="middleLine circleLeft">
+                    <div></div><div class="middle-line circle-left">
                     </div><div></div>
                 </div>
-                <div class="middleLine"></div>
-                <div class="eventIcon iconRight">
+                <div class="middle-line"></div>
+                <div class="event-icon icon-right">
                     <img src="./img/icons/cocktail.png" alt="">
                 </div>
-                <div class="eventIcon iconLeft">
+                <div class="event-icon icon-left">
                     <img src="./img/icons/brides.png" alt="">
                 </div>
-                <div class="middleLine"></div>
+                <div class="middle-line"></div>
                 <div class="event">
-                    <div></div><div class="middleLine circleRight">
+                    <div></div><div class="middle-line circle-right">
                     </div><div></div>
-                    <div class="eventDescription rightText">
+                    <div class="event-description right-text">
                         <h2>9:30 PM</h2>
                         <p>Entrada de novios</p>
                     </div>                    
                 </div>
                 <div class="event">
-                    <div class="eventDescription">
+                    <div class="event-description">
                         <h2>9:45 PM</h2>
                         <p>Primer baile</p>
                     </div>
-                    <div></div><div class="middleLine circleLeft">
+                    <div></div><div class="middle-line circle-left">
                     </div><div></div>
                 </div>
-                <div class="middleLine"></div>
-                <div class="eventIcon iconRight">
+                <div class="middle-line"></div>
+                <div class="event-icon icon-right">
                     <img src="./img/icons/waltz.png" alt="">
                 </div>
-                <div class="eventIcon iconLeft">
+                <div class="event-icon icon-left">
                     <img src="./img/icons/dinner.png" alt="">
                 </div>
-                <div class="middleLine"></div>
+                <div class="middle-line"></div>
                 <div class="event">
-                    <div></div><div class="middleLine circleRight">
+                    <div></div><div class="middle-line circle-right">
                     </div><div></div>
-                    <div class="eventDescription rightText">
+                    <div class="event-description right-text">
                         <h2>10:00 PM</h2>
                         <p>Cena</p>
                     </div>                    
                 </div>
                 <div class="event">
-                    <div class="eventDescription">
+                    <div class="event-description">
                         <h2>11:00 PM</h2>
                         <p>Party</p>
                     </div>
-                    <div></div><div class="middleLine circleLeft">
+                    <div></div><div class="middle-line circle-left">
                     </div><div></div>
                 </div>
-                <div class="middleLine"></div>
-                <div class="eventIcon iconRight">
+                <div class="middle-line"></div>
+                <div class="event-icon icon-right">
                     <img src="./img/icons/party.png" alt="">
                 </div>
             </div>
@@ -251,6 +266,7 @@
         </section>
     </main>
 </body>
+<script src="./javascript/nav-menu.js"></script>
 <script src="./javascript/countdown.js"></script>
 <script src="./javascript/music-player.js" ></script>
 </html>

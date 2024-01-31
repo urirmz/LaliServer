@@ -19,10 +19,10 @@ let curr_track = document.createElement('audio');
 // Define the list of tracks that have to be played
 let track_list = [
     {
-      path: "./music/SinTi-LosPanchos.mp3"
+      path: "./music/EdSheeran-Photograph.mp3"
     },
     {
-      path: "./music/EdSheeran-Photograph.mp3"
+      path: "./music/SinTi-LosPanchos.mp3"
     },
     {
       path: "./music/Earth,Wind&Fire-MyPromise.mp3",

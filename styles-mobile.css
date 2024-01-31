@@ -7,7 +7,7 @@
     --dark-gray: #A2A39A;
     --gray: #CCC7C3;
     /* Seizures */
-    --navBarHeight: 1rem;
+    --nav-barHeight: 1rem;
 }
 
 html {
@@ -31,36 +31,57 @@ nav {
     font-size: 1rem;
 }
 
-.navBar {
-    display: flex;
-    padding: var(--navBarHeight) 10%;
-    height: var(--navBarHeight);
-    justify-content: space-evenly;
-    transition: all 1s;
-    font-family: 'Forum', serif;
-    text-transform: unset;
-    z-index: 999;
-    font-weight: bold;
+.nav-bar {
+    display: none;
 }
 
-.navDarkFont {
-    position: sticky;
+.nav-menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
     top: 0;
-    background-color: var(--background-white);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: var(--dark-green);
+    color: white;
+    list-style: none;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 
-.navDarkFont a {
-    color: var(--dark-green);
+.nav-menu-link {
+    font-size: 2em;
+    padding: 1em 0;
+    border-top: 0.1em solid var(--gray); 
 }
 
-.navLink:hover::after, .navLink:active::after {
-    display: block;
-    content: '';
-    position: relative;
-    left: -15%;
-    width: 130%;
-    height: 0.2em;
-    background-color: var(--gray);
+.show-nav-menu {
+    transform: translateY(0);
+}
+
+.nav-menu-button {
+    position: fixed;
+    z-index: 999;
+    top: 1rem;
+    left: 1rem;
+    padding: 1em;
+    border: var(--dark-green) solid 0.1em;
+    width: 4em;
+    height: 4em;
+    background: var(--background-white);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.nav-menu-button:active {
+    opacity: 1;
+}
+
+.close-menu {
+    display: none;
 }
 
 .main-image {
@@ -83,9 +104,13 @@ nav {
     color: var(--background-white);
 }
 
+.title {
+    padding-top: 16em;
+}
+
 #inicio h1 {
     font-family: 'amsterdam', sans-serif;
-    margin: 3em auto 0 auto;
+    margin: 0 auto 0 auto;
     text-transform: capitalize;
     font-size: 2.5em;
     font-weight: 200;   
@@ -119,7 +144,7 @@ nav {
     display: inline;
 }
 
-.buttonLink {
+.button-link {
     display: inline-block;
     padding: 1em;
     margin: 0.2em;
@@ -130,7 +155,7 @@ nav {
     transition: all 1s;
 }
 
-.buttonLink:hover {
+.button-link:hover {
     display: inline-block;
     color: var(--dark-green);
     background-color: var(--background-white);
@@ -216,9 +241,9 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 }
 
 section {
-    padding-top: calc(var(--navBarHeight) * 3);
-    padding: calc(var(--navBarHeight) * 3) 5%;
-    height: calc(75vh + var(--navBarHeight));
+    padding-top: calc(var(--nav-barHeight) * 3);
+    padding: calc(var(--nav-barHeight) * 3) 5%;
+    height: calc(75vh + var(--nav-barHeight));
 }
 
 #invitacion {
@@ -254,7 +279,7 @@ section {
     margin: -1em 0 0 0;
 }
 
-#nuestraHistoria {
+#nuestra-historia {
     height: unset;
     padding-left: 5%;
     padding-right: 5%;
@@ -309,13 +334,13 @@ section {
     text-transform: uppercase;
 }
 
-.middleLine {
+.middle-line {
     background-color: var(--dark-green);
     --circle-diameter: 1em;
     --circle-radius: calc(var(--circle-diameter) / 2);
 }
 
-.circleLeft::before {
+.circle-left::before {
     content: '';
     display: block;
     height: var(--circle-diameter);
@@ -326,7 +351,7 @@ section {
     margin-left: calc(var(--circle-radius) * -1);
 }
 
-.circleRight::after {
+.circle-right::after {
     content: '';
     display: block;
     height: var(--circle-diameter);
@@ -343,42 +368,42 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
-.eventDescription {
+.event-description {
     grid-row: 1 / 4;
     margin: auto;
     text-align: center;
 }
 
-.eventDescription h2 {
+.event-description h2 {
     font-size: 1.4em;
 }
 
-.eventDescription p {
+.event-description p {
     font-size: 1.2em;
 }
 
-.eventDescription h2, .eventDescription p {
+.event-description h2, .event-description p {
     margin: 0;
 }
 
-.rightText {
+.right-text {
     grid-column: 2 / 3;
 }
 
-.eventIcon {
+.event-icon {
     display: flex;
 }
 
-.eventIcon img {
+.event-icon img {
     max-height: 5em;
     padding: 1em 2em;
 }
 
-.iconLeft {
+.icon-left {
     justify-content: right;
 }
 
-.iconRight {
+.icon-right {
     justify-content: left;
 }
 

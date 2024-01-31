@@ -7,7 +7,7 @@
     --dark-gray: #A2A39A;
     --gray: #CCC7C3;
     /* Seizures */
-    --navBarHeight: 1rem;
+    --nav-barHeight: 1rem;
 }
 
 body {
@@ -27,10 +27,10 @@ nav {
     font-size: 1rem;
 }
 
-.navBar {
+.nav-bar {
     display: flex;
-    padding: var(--navBarHeight) 10%;
-    height: var(--navBarHeight);
+    padding: var(--nav-barHeight) 10%;
+    height: var(--nav-barHeight);
     justify-content: space-evenly;
     transition: all 1s;
     font-family: 'Forum', serif;
@@ -39,17 +39,21 @@ nav {
     font-weight: bold;
 }
 
-.navDarkFont {
+.nav-menu, .nav-menu-button {
+    display: none;
+}
+
+.nav-dark-font {
     position: sticky;
     top: 0;
     background-color: var(--background-white);
 }
 
-.navDarkFont a {
+.nav-dark-font a {
     color: var(--dark-green);
 }
 
-.navLink:hover::after, .navLink:active::after {
+.nav-bar-link:hover::after, .nav-bar-link:active::after {
     display: block;
     content: '';
     position: relative;
@@ -112,7 +116,7 @@ nav {
     display: inline;
 }
 
-.buttonLink {
+.button-link {
     display: inline-block;
     padding: 1em;
     margin: 0.2em;
@@ -123,7 +127,7 @@ nav {
     transition: all 1s;
 }
 
-.buttonLink:hover {
+.button-link:hover {
     display: inline-block;
     color: var(--dark-green);
     background-color: var(--background-white);
@@ -209,9 +213,9 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 }
 
 section {
-    padding-top: calc(var(--navBarHeight) * 3);
-    padding: calc(var(--navBarHeight) * 3) 10%;
-    height: calc(100vh + var(--navBarHeight));
+    padding-top: calc(var(--nav-barHeight) * 3);
+    padding: calc(var(--nav-barHeight) * 3) 10%;
+    height: calc(100vh + var(--nav-barHeight));
 }
 
 .quote {
@@ -243,7 +247,7 @@ section {
     margin: -1em 0 0 0;
 }
 
-#nuestraHistoria {
+#nuestra-historia {
     height: unset;
 }
 
@@ -296,13 +300,13 @@ section {
     text-transform: uppercase;
 }
 
-.middleLine {
+.middle-line {
     background-color: var(--dark-green);
     --circle-diameter: 1.5em;
     --circle-radius: calc(var(--circle-diameter) / 2);
 }
 
-.circleLeft::before {
+.circle-left::before {
     content: '';
     display: block;
     height: var(--circle-diameter);
@@ -313,7 +317,7 @@ section {
     margin-left: calc(var(--circle-radius) * -1);
 }
 
-.circleRight::after {
+.circle-right::after {
     content: '';
     display: block;
     height: var(--circle-diameter);
@@ -330,34 +334,34 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
-.eventDescription {
+.event-description {
     grid-row: 1 / 4;
     margin: auto;
     text-align: center;
 }
 
-.eventDescription h2, .eventDescription p {
+.event-description h2, .event-description p {
     margin: 0;
 }
 
-.rightText {
+.right-text {
     grid-column: 2 / 3;
 }
 
-.eventIcon {
+.event-icon {
     display: flex;
 }
 
-.eventIcon img {
+.event-icon img {
     max-height: 6em;
     padding: 0 2em;
 }
 
-.iconLeft {
+.icon-left {
     justify-content: right;
 }
 
-.iconRight {
+.icon-right {
     justify-content: left;
 }
 
