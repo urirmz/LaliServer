@@ -93,7 +93,7 @@ nav {
 
 #inicio h3 {
     text-transform: uppercase;
-    margin: 2em auto;
+    margin: 3em auto;
 }
 
 .fecha {
@@ -217,8 +217,12 @@ i.fa-play-circle, i.fa-pause-circle, i.fa-step-forward, i.fa-step-backward {
 
 section {
     padding-top: calc(var(--navBarHeight) * 3);
-    padding: calc(var(--navBarHeight) * 3) 10%;
-    height: calc(100vh + var(--navBarHeight));
+    padding: calc(var(--navBarHeight) * 3) 5%;
+    height: calc(75vh + var(--navBarHeight));
+}
+
+#invitacion {
+    height: 100%;
 }
 
 .quote {
@@ -273,15 +277,15 @@ section {
 }
 
 .gallery-column:nth-child(1) {
-    flex-basis: 40%;
+    flex-basis: 53%;
 }
 
 .gallery-column:nth-child(2) {
-    flex-basis: 35%;
+    flex-basis: 47%;
 }
 
 .gallery-column:nth-child(3) {
-    flex-basis: 25%;
+    flex-basis: 100%;
 }
 
 .gallery-pic {
@@ -346,11 +350,11 @@ section {
 }
 
 .eventDescription h2 {
-    font-size: 1em;
+    font-size: 1.4em;
 }
 
 .eventDescription p {
-    font-size: 0.7em;
+    font-size: 1.2em;
 }
 
 .eventDescription h2, .eventDescription p {
