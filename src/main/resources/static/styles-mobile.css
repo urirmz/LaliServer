@@ -127,6 +127,8 @@ nav {
     grid-template-columns: 1fr 4.5em 1fr;
     width: 16em;
     margin: 1em auto;
+    font-size: 1.2em;
+    font-weight: bold;
 } 
 
 .fecha div {
@@ -141,6 +143,8 @@ nav {
 
 #countdown {
     display: inline;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .button-link {
