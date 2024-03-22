@@ -16,14 +16,19 @@ html {
 
 body {
     margin: 0;
-    background-color: var(--background-white);
-    color: var(--dark-green);
+    background-color: var(--darker-green);
     font-family: 'Poppins', sans-serif;
 }
 
 body a {
     text-decoration: none;
     color: var(--background-white);
+}
+
+h1 {
+    font-family: 'amsterdam', sans-serif;
+    font-size: 2em;
+    text-align: center;
 }
 
 nav {
@@ -56,6 +61,15 @@ nav {
     font-size: 2em;
     padding: 1em 0;
     border-top: 0.1em solid var(--gray); 
+}
+
+.light-section {
+    background-color: var(--background-white);
+    color: var(--dark-green);
+}
+
+.dark-section {
+    color: var(--background-white);
 }
 
 .show-nav-menu {
@@ -108,7 +122,6 @@ nav {
 }
 
 #inicio h1 {
-    font-family: 'amsterdam', sans-serif;
     margin: 0 auto 0 auto;
     text-transform: capitalize;
     font-size: 2.5em;
@@ -250,6 +263,7 @@ section {
 }
 
 #invitacion {
+    background-color: var(--background-white);
     height: 100%;
 }
 
@@ -325,6 +339,11 @@ section {
 .gallery-pic img {
     width: 100%;
     border-radius: 1em;
+}
+
+#guia-del-evento {
+    background-color: var(--background-white);
+    height: 100%;
 }
 
 #timeline {
@@ -410,3 +429,56 @@ section {
     justify-content: left;
 }
 
+#vestimenta img {
+    margin: 1em auto;
+    max-width: 20em;
+    display: block;
+}
+
+#vestimenta h2 {
+    text-align: center;
+    color: var(--gray);
+}
+
+#regalos {
+    background-color: var(--background-white);
+    height: 100%;
+}
+
+.gift-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-icon {
+    width: 20em;
+}
+
+#regalos p {
+    text-align: center;
+}
+
+.gift-account {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 7em;
+}
+
+.gift-account img {
+    height: 5em;
+    border-radius: 25%;
+    padding: 1em;
+}
+
+.gift-account a {
+    align-self: center;
+    color: var(--dark-green);
+}
+
+#asistencia h1 {
+    text-align: center;
+    margin: 1em auto;
+}
