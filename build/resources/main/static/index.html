@@ -278,8 +278,14 @@
         </section>
         <section id="asistencia" class="dark-section">
             <h1>Confirma tu asistencia</h1>
-            <form id="assistance-form">
-
+            <form id="assistance-form" method="post" action="/api/assistant/add">
+                <fieldset>
+                    <label for="assistant-name">Nombre<input id="assistant-name" name="name" type="text"></label>
+                    <label for="assistant-phone">Teléfono<input id="assistant-phone" name="phone" type="text"></label>
+                    <label for="assistant-confirmation">Confirmación<input id="assistant-confirmation" name="confirmation" type="text"></label>
+                    <label for="assistant-message">Mensaje para los novios<input id="assistant-message" name="message" type="text" ></label>
+                </fieldset>
+                <input type="submit" value="Enviar">
             </form>
         </section>
     </main>
