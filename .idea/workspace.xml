@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bd1a3c52-1f55-4c00-baf2-c15c86037649" name="Changes" comment="fix: LaliServer folders and tweaks">
-      <change afterPath="$PROJECT_DIR$/src/main/java/LaliServer/controllers/AssistantsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LaliServer/models/Assistant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/LaliServer/services/AssistantsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,13 +12,16 @@
       <change beforePath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.5/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LaliServer/controllers/RootController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/LaliServer/controllers/AssistantsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/LaliServer/controllers/AssistantsController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/static/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/LaliServer/controllers/RootController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LaliServer/controllers/AssistantsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LaliServer/controllers/AssistantsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles-mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles-mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelloControllerIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelloControllerIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HelloControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HelloControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,24 +96,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build Lali.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Lali [:Application.main()].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.LaliServer [:Application.main()].executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.Upgrade Gradle wrapper.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/ingur/Codes/Lali/src/main/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/Java/jdk-22&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build Lali.executor": "Run",
+    "Gradle.Lali [:Application.main()].executor": "Debug",
+    "Gradle.LaliServer [:Application.main()].executor": "Debug",
+    "Gradle.Upgrade Gradle wrapper.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/ingur/Codes/Lali/src/main/java",
+    "last_opened_file_path": "C:/Program Files/Java/jdk-22",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ingur\OneDrive\Escritorio\LaliServer\src\main\resources\static" />
@@ -185,7 +183,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: MySQL connection" />
     <MESSAGE value="fix: LaliServer folders and tweaks" />
     <option name="LAST_COMMIT_MESSAGE" value="fix: LaliServer folders and tweaks" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="assistantRepository" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

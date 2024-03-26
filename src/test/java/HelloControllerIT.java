@@ -1,4 +1,4 @@
-package com.example.springboot;
+package LaliServer;
 
 import org.junit.jupiter.api.Test;
 

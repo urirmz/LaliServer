@@ -478,7 +478,42 @@ section {
     color: var(--dark-green);
 }
 
+#asistencia {
+    height: 60em;
+}
+
 #asistencia h1 {
     text-align: center;
     margin: 1em auto;
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+    padding: 0 3em;
+    margin: 0;
+}
+
+#asistencia label {
+  display: block;
+  margin: 1em 0;
+}
+
+#asistencia input, #asistencia select, #asistencia textarea {
+    margin: 0.8em 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    color: var(--green);
+    background-color: var(--background-white);
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 0.2em;
+}
+
+#asistencia input[type="submit"] {
+    min-height: 3em;
+    border-radius: 0.5em;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%
 }
