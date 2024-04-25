@@ -4,12 +4,17 @@ import LaliServer.models.Assistant;
 import LaliServer.services.AssistantsRepository;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 @RestController
-@RequestMapping(path="/api/assistant")
+@RequestMapping(path="/assistants")
 public class AssistantsController {
 
     @Autowired
@@ -29,22 +34,27 @@ public class AssistantsController {
         response.sendRedirect("/");
     }
 
-    @GetMapping(path="/all.csv")
-    //public @ResponseBody ResponseEntity<Resource> getAllUsers(HttpServletResponse response) throws IOException {
-    public @ResponseBody void getAllUsers(HttpServletResponse response) throws IOException {
+    @GetMapping(path = "/all")
+    public @ResponseBody ResponseEntity<byte[]> getAllUsers(HttpServletResponse response) throws IOException, URISyntaxException {
         Iterable<Assistant> allAssistants = assistantRepository.findAll();
 
-        for (Assistant assistant : allAssistants) {
+        String fileContent = "Nombres,Teléfono,Confirmación,Mensaje\n";
 
+        for (Assistant assistant : allAssistants) {
+            String name = assistant.getName() + ",";
+            String phone = assistant.getPhone() + ",";
+            String confirmation = assistant.getConfirmation() + ",";
+            String message = assistant.getMessage() + "\n";
+            fileContent += name + phone + confirmation + message;
         }
 
-        /*InputStreamResource resource = new InputStreamResource(new FileInputStream(file));
+        HttpHeaders fileHeaders = new HttpHeaders();
+        fileHeaders.setContentType(MediaType.APPLICATION_OCTET_STREAM);
+        fileHeaders.setContentDispositionFormData("attachment", "ListaDeAsistentes.csv");
 
-        return ResponseEntity.ok()
-                .headers(headers)
-                .contentLength(file.length())
-                .contentType(MediaType.APPLICATION_OCTET_STREAM)
-                .body(resource);*/
+        byte[] csvFile = fileContent.getBytes();
+
+        return new ResponseEntity<>(csvFile, fileHeaders, HttpStatus.OK);
     }
 
 }

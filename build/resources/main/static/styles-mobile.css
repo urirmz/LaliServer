@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    zoom: 1;
     margin: 0;
     background-color: var(--darker-green);
     font-family: 'Poppins', sans-serif;
@@ -445,37 +446,49 @@ section {
     height: 100%;
 }
 
-.gift-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+.gift-container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 45% 18% 1fr;
     align-items: center;
+    justify-items: center;
+    padding: 5%;
+    border: 0.1em solid var(--dark-green);
+    box-shadow: 0.5em 0.5em 0 var(--green);
 }
 
-.gift-icon {
-    width: 20em;
+.gifts-icon {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+.gifts-icon img {
+    max-width: 100%;
+}
+
+.gift-account-icon {
+    grid-column: 2;
+    vertical-align-center;
+}
+
+.gift-account-icon img {
+    max-width: 100%;
+    border-radius: 1em;
+}
+
+.gift-account-text {
+    grid-column: 3;
+    color: var(--green);
+    padding: 1em;
+}
+
+#regalos h1 {
+    margin: 1em 0 0.5em 0;
 }
 
 #regalos p {
     text-align: center;
-}
-
-.gift-account {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 7em;
-}
-
-.gift-account img {
-    height: 5em;
-    border-radius: 25%;
-    padding: 1em;
-}
-
-.gift-account a {
-    align-self: center;
-    color: var(--dark-green);
+    margin: 0 1em 2em 0;
 }
 
 #asistencia {

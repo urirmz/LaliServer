@@ -5,5 +5,4 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface AssistantsRepository extends CrudRepository<Assistant, Long> {
 
-    Assistant findById(long id);
 }
