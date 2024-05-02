@@ -60,7 +60,7 @@ nav {
 
 .nav-menu-link {
     font-size: 2em;
-    padding: 1em 0;
+    padding: 0.8em 0;
     border-top: 0.1em solid var(--gray); 
 }
 
@@ -90,6 +90,11 @@ nav {
     cursor: pointer;
 }
 
+.open-menu,
+.close-menu {
+    color: var(--dark-green);
+}
+
 .nav-menu-button:active {
     opacity: 1;
 }
@@ -107,7 +112,7 @@ nav {
         #2C3628B4 15%,
         #2C3628B4
         ), 
-        url(img/gallery/1.jpg);
+        url(img/main.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -264,7 +269,6 @@ section {
 }
 
 #invitacion {
-    background-color: var(--background-white);
     height: 100%;
 }
 
@@ -293,53 +297,40 @@ section {
     text-transform: capitalize;
 }
 
-#invite h3:last-of-type {
-    margin: -1em 0 0 0;
-}
-
 #nuestra-historia {
     height: unset;
     padding-left: 5%;
     padding-right: 5%;
 }
 
+#gallery-cover {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
 #gallery {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0.5em;
+}
+
+.gallery-pic {
     width: 100%;
     height: 100%;
 }
 
-.gallery-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.full-width  { 
+    grid-column: 1 / 3; 
 }
 
-.gallery-column:nth-child(1) {
-    flex-basis: 53%;
+#gallery-pic-2 {
+    grid-row: 3 / 5;
 }
 
-.gallery-column:nth-child(2) {
-    flex-basis: 47%;
-}
-
-.gallery-column:nth-child(3) {
-    flex-basis: 100%;
-}
-
-.gallery-pic {
-    display: inline-flex;
-    margin: 0;
-    padding: 2.5%;
-}
-
-.gallery-pic img {
-    width: 100%;
-    border-radius: 1em;
+#gallery-pic-16 {
+    grid-row: 12 / 14;
 }
 
 #guia-del-evento {
@@ -430,6 +421,10 @@ section {
     justify-content: left;
 }
 
+#vestimenta {
+    height: 100%;
+}
+
 #vestimenta img {
     margin: 1em auto;
     max-width: 20em;
@@ -449,7 +444,7 @@ section {
 .gift-container {
     width: 90%;
     display: grid;
-    grid-template-columns: 45% 18% 1fr;
+    grid-template-columns: 45% 10% 1fr;
     align-items: center;
     justify-items: center;
     padding: 5%;
@@ -468,7 +463,7 @@ section {
 
 .gift-account-icon {
     grid-column: 2;
-    vertical-align-center;
+    vertical-align: center;
 }
 
 .gift-account-icon img {
@@ -480,6 +475,7 @@ section {
     grid-column: 3;
     color: var(--green);
     padding: 1em;
+    text-align: center;
 }
 
 #regalos h1 {
@@ -492,7 +488,7 @@ section {
 }
 
 #asistencia {
-    height: 60em;
+    height: 90vh;
 }
 
 #asistencia h1 {
@@ -529,4 +525,9 @@ fieldset {
     width: 70%;
     margin-left: 15%;
     margin-right: 15%
+}
+
+
+.appear-on-scroll {
+    transition: all 2s;
 }
