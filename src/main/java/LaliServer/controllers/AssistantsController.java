@@ -41,10 +41,10 @@ public class AssistantsController {
         String fileContent = "Nombres,Teléfono,Confirmación,Mensaje\n";
 
         for (Assistant assistant : allAssistants) {
-            String name = assistant.getName() + ",";
-            String phone = assistant.getPhone() + ",";
-            String confirmation = assistant.getConfirmation() + ",";
-            String message = assistant.getMessage() + "\n";
+            String name = assistant.getName().replace(",", " ") + ",";
+            String phone = assistant.getPhone().replace(",", " ") + ",";
+            String confirmation = assistant.getConfirmation().replace(",", " ") + ",";
+            String message = assistant.getMessage().replace(",", " ") + "\n";
             fileContent += name + phone + confirmation + message;
         }
 
